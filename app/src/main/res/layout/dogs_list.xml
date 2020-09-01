@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dogs_list_swipe_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.dogs.list.DogsListFragment">
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dogs_list_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello DOGS" />
-</FrameLayout>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
