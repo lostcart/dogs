@@ -1,8 +1,11 @@
-package com.lost.dogs
+package com.lost.dogs.features
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.lost.dogs.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
