@@ -56,7 +56,7 @@ subprojects {
                     versionName version_name
                     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
                     vectorDrawables.useSupportLibrary = true
-                    buildConfigField 'String', 'DOGS_ENDPOINT', '"https://dog.ceo/api"'
+                    buildConfigField 'String', 'DOGS_ENDPOINT', '"https://dog.ceo/api/"'
                 }
 
                 buildTypes {

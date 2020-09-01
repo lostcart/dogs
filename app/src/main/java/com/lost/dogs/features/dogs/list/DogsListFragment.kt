@@ -17,5 +17,6 @@ class DogsListFragment : BaseFragment() {
     }
 
     override fun setupViewModel() {
+        viewModel.init()
     }
 }
