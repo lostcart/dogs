@@ -4,7 +4,6 @@ import com.lost.data.datastore.DogDataStore
 import com.lost.data.mapper.DogImagesMapper
 import com.lost.data.mapper.DogsMapper
 import com.lost.data.models.DogImagesResponse
-import com.lost.data.models.DogsResponse
 import com.lost.domain.models.Dog
 import com.lost.domain.models.DogImage
 import com.lost.domain.repository.DogRepository
