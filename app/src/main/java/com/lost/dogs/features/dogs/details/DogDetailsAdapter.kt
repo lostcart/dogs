@@ -3,18 +3,11 @@ package com.lost.dogs.features.dogs.details
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.lost.dogs.R
 import com.lost.dogs.features.shared.images.ImageLoader
-import com.lost.domain.models.Dog
 import com.lost.domain.models.DogImage
-import com.lost.tronald2020.features.shared.SingleLiveEvent
-import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.dog_image_item.view.*
-import kotlinx.android.synthetic.main.dog_item.view.*
-import javax.inject.Inject
 
 /**
  * Recyclerview adapter to show list of dog images

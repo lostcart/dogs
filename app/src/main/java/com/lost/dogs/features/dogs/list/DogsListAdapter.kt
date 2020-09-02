@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.lost.dogs.R
+import com.lost.dogs.features.shared.SingleLiveEvent
 import com.lost.domain.models.Dog
-import com.lost.tronald2020.features.shared.SingleLiveEvent
 import kotlinx.android.synthetic.main.dog_item.view.*
 
 /**

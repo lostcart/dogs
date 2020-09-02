@@ -1,4 +1,4 @@
-package com.lost.tronald2020.features.shared
+package com.lost.dogs.features.shared
 
 import android.util.Log
 import androidx.annotation.MainThread
