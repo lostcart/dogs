@@ -18,6 +18,7 @@ buildscript {
     ext.mockito_version = "3.4.4"
     ext.mockito_kotlin_version = "2.2.0"
     ext.hilt_version = "2.28-alpha"
+    ext.glide_version ="4.11.0"
 
     repositories {
         google()

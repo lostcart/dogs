@@ -46,7 +46,7 @@ class DogsListAdapter : RecyclerView.Adapter<DogsListAdapter.ViewHolder?>() {
         fun setDog(dog: Dog?) {
             dog?.let {
                 this.dog = it
-                itemView.dog_item_textview.text = it.name
+                itemView.dog_item_textview.text = it.toString()
             }
         }
 

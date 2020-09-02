@@ -11,4 +11,7 @@ internal interface DogApiService {
 
     @GET("breed/{dog_breed}/images")
     suspend fun get(@Path("dog_breed") dogBreed: String): DogImagesResponse
+
+    @GET("breed/{dog_breed}/{dog_subbreed}/images")
+    suspend fun get(@Path("dog_breed") dogBreed: String, @Path("dog_subbreed") dogSubBreed: String): DogImagesResponse
 }

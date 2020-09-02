@@ -2,6 +2,9 @@ package com.lost.dogs.features.dogs.list
 
 import android.widget.Toast
 import androidx.lifecycle.Observer
+import androidx.navigation.NavOptions
+import androidx.navigation.fragment.FragmentNavigatorExtras
+import androidx.navigation.fragment.findNavController
 import com.lost.dogs.R
 import com.lost.dogs.features.shared.base.BaseFragment
 import com.lost.domain.models.Dog
@@ -49,6 +52,8 @@ class DogsListFragment : BaseFragment() {
     }
 
     private fun showDogDetails(dog: Dog?) {
-        // TODO: Navigate to details
+        dog?.let {
+            findNavController().navigate(DogsListFragmentDirections.actionDogsToDetail(it))
+        }
     }
 }

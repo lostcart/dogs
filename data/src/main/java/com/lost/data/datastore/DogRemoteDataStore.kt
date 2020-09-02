@@ -16,4 +16,8 @@ internal class DogRemoteDataStore @Inject constructor(
     override suspend fun get(dog: String): DogImagesResponse {
         return dogApiService.get(dog)
     }
+
+    override suspend fun get(dogBreed: String, dogSubBreed: String): DogImagesResponse {
+        return dogApiService.get(dogBreed, dogSubBreed)
+    }
 }

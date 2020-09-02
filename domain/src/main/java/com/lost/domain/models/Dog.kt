@@ -1,8 +1,12 @@
 package com.lost.domain.models
 
-data class Dog(val breed: String, val subBreed: String?) {
-    val name: String
-        get() {
-            return (if (subBreed != null) "$subBreed " else "") + breed
-        }
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Dog(val breed: String, val subBreed: String?): Parcelable {
+
+    override fun toString(): String {
+        return (if (subBreed != null) "$subBreed " else "") + breed
+    }
 }
